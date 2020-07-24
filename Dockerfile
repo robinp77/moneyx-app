@@ -17,4 +17,6 @@ EXPOSE 8080
 
 CMD java -javaagent:trend_app_protect-4.1.2.jar -jar build/libs/moneyx.jar
 
-ENV TREND_AP_LOG_FILE=STDERR
+ENV TREND_AP_LOG_FILE=/appsec.log
+ENV TREND_AP_LOG_LEVEL=DEBUG
+ENV TREND_AP_DEFENCE_LOG_FILE=/defence.log
