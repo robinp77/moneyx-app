@@ -47,6 +47,6 @@ spec:
         - name: TREND_AP_SECRET
           value: $APPSEC_SECRET
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
       imagePullSecrets:
       - name: $KUBERNETES_SECRET_NAME
