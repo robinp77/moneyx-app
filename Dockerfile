@@ -13,7 +13,7 @@ RUN gradle bootRepackage
 
 ADD https://files.trendmicro.com/products/CloudOne/ApplicationSecurity/1.0/trend_app_protect-4.1.2.jar trend_app_protect-4.1.2.jar
 
-EXPOSE 8081
+EXPOSE 8080
 
 CMD java -javaagent:trend_app_protect-4.1.2.jar -jar build/libs/moneyx.jar
 
